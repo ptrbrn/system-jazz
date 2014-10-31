@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "unity",
+			"folder_exclude_patterns": ["Builds"],
+			"file_exclude_patterns": [
+				"*.meta",
+				"*.sln", 
+				"*.userprefs", 
+				"*.csproj",
+				"*.pidb",
+				"*.mdb",
+				"*.unity",
+				"*.mat",
+				"*.prefab"
+			]
+		}
+	]
+}
