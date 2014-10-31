@@ -43,7 +43,8 @@ public class SystemJazzGenerator : MonoBehaviour
 		int i = 0;
 		while (true)
 		{
-			bar.localScale = new Vector3(audio.time/audio.clip.length, 1f, 1f);
+			float beats = 1f/4;
+			bar.localScale = new Vector3(Mathf.CeilToInt((audio.time/audio.clip.length)/beats)*beats, 1f, 1f);
 
 			if (audio.time < lastTime)
 			{
