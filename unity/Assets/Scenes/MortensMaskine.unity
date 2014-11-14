@@ -218,21 +218,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitions:
-  - weight: 0
+  - weight: 1
     chord: {fileID: 1238886818}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 652923025}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 86640327}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 1289669324}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 1010889604}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 2110555906}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 1053632120}
-  - weight: 0
+  - weight: 1
     chord: {fileID: 76407568}
 --- !u!4 &86640328
 Transform:

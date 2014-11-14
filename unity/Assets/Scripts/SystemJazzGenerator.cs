@@ -63,8 +63,8 @@ public class SystemJazzGenerator : MonoBehaviour
 	{
 		if (chords != null && chords.Count > 0)
 		{
-			Gizmos.color = Color.red;
-			Gizmos.DrawSphere(chords[0].transform.position, 1f);
+			Gizmos.color = Color.green;
+			Gizmos.DrawSphere(chords[0].transform.position, 2f);
 		}
 	}
 }
