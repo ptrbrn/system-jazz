@@ -36,24 +36,24 @@ public class SystemJazzGenerator : MonoBehaviour
 		chords.Add(startChord);
 		UpdateChords();
 
-		audio.clip = loop.clip;
-		audio.Play();
+		GetComponent<AudioSource>().clip = loop.clip;
+		GetComponent<AudioSource>().Play();
 		float lastTime = 0;
 
 		int i = 0;
 		while (true)
 		{
 			float beats = 1f/4;
-			bar.localScale = new Vector3(Mathf.CeilToInt((audio.time/audio.clip.length)/beats)*beats, 1f, 1f);
+			bar.localScale = new Vector3(Mathf.CeilToInt((GetComponent<AudioSource>().time/GetComponent<AudioSource>().clip.length)/beats)*beats, 1f, 1f);
 
-			if (audio.time < lastTime)
+			if (GetComponent<AudioSource>().time < lastTime)
 			{
 				i++;
 				chords.RemoveAt(0);
 				UpdateChords();
 			}
 
-			lastTime = audio.time;
+			lastTime = GetComponent<AudioSource>().time;
 
 			yield return null;
 		}
